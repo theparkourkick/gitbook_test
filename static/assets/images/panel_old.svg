@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="362px" height="293px" viewBox="0 0 362 293" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Windows / Panel / Aqua</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="346" height="274"></rect>
+        <filter x="-4.0%" y="-5.1%" width="108.1%" height="111.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter2"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter2" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="1.44927536%" x2="50%" y2="97.1014493%" id="linearGradient-3">
+            <stop stop-color="#EDECED" offset="0%"></stop>
+            <stop stop-color="#D2D1D2" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-4" points="0 0 346 0 346 16 0 16"></polygon>
+        <filter x="-0.1%" y="-3.1%" width="100.3%" height="106.2%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.717647059   0 0 0 0 0.705882353   0 0 0 0 0.717647059  0 0 0 0.3 0" type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+            <feOffset dx="0" dy="-0.5" in="SourceAlpha" result="shadowOffsetInner2"></feOffset>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.717647059   0 0 0 0 0.705882353   0 0 0 0 0.717647059  0 0 0 1 0" type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+            <feGaussianBlur stdDeviation="0.25" in="SourceAlpha" result="shadowBlurInner3"></feGaussianBlur>
+            <feOffset dx="0" dy="0.5" in="shadowBlurInner3" result="shadowOffsetInner3"></feOffset>
+            <feComposite in="shadowOffsetInner3" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner3"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowInnerInner3" result="shadowMatrixInner3"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner2"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner3"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-91.000000, -119.000000)">
+            <g id="Windows-/-Panel-/-Aqua" transform="translate(99.000000, 127.000000)">
+                <g id="Background">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke-opacity="0.2" stroke="#000000" stroke-width="0.5" fill="#F7F7F7" fill-rule="evenodd" x="-0.25" y="-0.25" width="346.5" height="274.5"></rect>
+                </g>
+                <g id="Windows-/-Title-Bar-(Panel)-/-Aqua">
+                    <g id="Titlebar-Background">
+                        <use fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                    </g>
+                    <text id="Panel-Title" font-family="SFProText-Medium, SF Pro Text" font-size="11" font-weight="400" letter-spacing="0.0700000003" fill="#000000" fill-opacity="0.73">
+                        <tspan x="139.921641" y="12">UX Designer</tspan>
+                    </text>
+                    <g id="Windows-/-x-/-Window-Controls-/-Panel---Default-/-Aqua" transform="translate(6.000000, 3.000000)" fill-rule="evenodd" stroke-width="0.5">
+                        <circle id="Traffic-Light---Zoom" stroke="#B2B2B2" fill="#D0D0D0" cx="41.5" cy="5" r="4.75"></circle>
+                        <circle id="Traffic-Light---Minimise" stroke="#B2B2B2" fill="#D0D0D0" cx="23.5" cy="5" r="4.75"></circle>
+                        <circle id="Traffic-Light---Close" stroke="#E24640" fill="#FF6157" cx="5.5" cy="5" r="4.75"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

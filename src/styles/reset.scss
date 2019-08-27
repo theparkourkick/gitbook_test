@@ -1,0 +1,38 @@
+@import "./mixins";
+
+body {
+    margin: 0;
+
+     &.ReactModal__Body--open {
+         overflow: hidden;
+     }
+}
+
+h2,h3, p {
+    margin: 0;
+}
+.Projects-module--projectList--3f2tj {
+    .react-reveal {
+            max-width: 344px;
+            width: 100%;
+
+            &:nth-child(2) {
+                @include for-tablet-landscape-only {
+                    margin: 0 2vw;
+                  }
+              
+                  @include for-tablet-portait-only {
+                    margin: 20px 0;
+                  }
+              
+                  @include for-phone-only {
+                    margin: 20px 0;
+                  }
+            }
+
+            @include for-phone-only {
+                max-width: 274px;
+              }
+        }
+}
+// 

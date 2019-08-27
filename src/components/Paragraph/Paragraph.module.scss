@@ -1,0 +1,35 @@
+@import "../../styles/mixins";
+
+.base {
+  font-family: "BentonSans";
+  font-weight: 400;
+}
+
+.paragraph {
+  composes: base;
+  line-height: 42px;
+  font-size: 22px;
+  @include letter-spacing(30);
+
+  $min_width: 320px;
+  $max_width: 1440px;
+  $min_font: 16px;
+  $max_font: 22px;
+
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
+  @include for-tablet-landscape-only {
+    line-height: 36px;
+    // font-size: 18px;
+  }
+
+  @include for-tablet-portait-only {
+    line-height: 32px;
+    // font-size: 16px;
+  }
+
+  @include for-phone-only {
+    line-height: 26px;
+    // font-size: 14px;
+  }
+}

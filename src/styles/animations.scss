@@ -1,0 +1,92 @@
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(0.625em);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes left-to-right-scale {
+  0% {
+    transform: scale(0);
+    transform-origin: left top;
+  }
+
+  100% {
+    transform: scale(1);
+    transform-origin: left top;
+  }
+}
+
+@keyframes right-to-left-scale {
+  0% {
+    transform: scale(0);
+    transform-origin: right top;
+  }
+
+  100% {
+    transform: scale(1);
+    transform-origin: right top;
+  }
+}
+
+@keyframes left-to-right {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left top;
+  }
+
+  100% {
+    transform: scaleX(1);
+    transform-origin: left top;
+  }
+}
+
+@keyframes move-left-to-right {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes move-right-to-left {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.fade-bottom {
+  animation: fade-bottom;
+  animation-fill-mode: backwards;
+}
+
+.left-to-right-scale {
+  animation: left-to-right-scale  cubic-bezier(0.165, 0.84, 0.44, 1) backwards;
+}
+
+.right-to-left-scale {
+  animation: right-to-left-scale  cubic-bezier(0.165, 0.84, 0.44, 1) backwards;
+}
+
+.left-to-right {
+  animation: left-to-right cubic-bezier(0.165, 0.84, 0.44, 1) backwards;
+}
+
+.move-left-to-right {
+  animation: move-left-to-right cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.move-right-to-left {
+  animation: move-right-to-left cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}

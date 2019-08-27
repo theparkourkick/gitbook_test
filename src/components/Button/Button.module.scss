@@ -1,0 +1,44 @@
+@import "../../styles/mixins";
+
+.base {
+  max-width: 312px;
+  height: 60px;
+  box-sizing: border-box;
+  font-family: "BentonSans";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  border: 1px solid #A7A7A7;
+  background-color: transparent;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+  @include for-tablet-landscape-only {
+    max-width: 280px;
+  }
+
+  @include for-phone-only {
+    font-size: 18px;
+    line-height: 18px;
+    max-width: 264px;
+    height: 60px;
+  }
+
+  @include for-tablet-portait-only {
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 260px;
+    height: 55px;
+  }
+
+  &:hover {
+    background-color: #F8F8F8;
+    border-color: #4E4E4E;
+  }
+}
