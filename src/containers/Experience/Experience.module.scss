@@ -1,0 +1,71 @@
+@import "../../styles/mixins";
+
+.experienceSection {
+  padding: 106px 0 193px 0;
+
+  @include for-tablet-landscape-only {
+    padding: 11.7vh 0 21.4vh 0;
+  }
+
+  @include for-tablet-portait-only {
+    padding: 10vh 0 20vh 0;
+  }
+
+  @include for-phone-only {
+    padding: 32px 24px 0 24px;
+  }
+}
+
+.sectionTitle {
+}
+
+.heading {
+  padding: 44px 0 0 0;
+  text-align: center;
+  max-width: 958px;
+  margin: 0 auto 61px auto;
+
+  @include for-tablet-landscape-only {
+    max-width: 800px;
+  }
+
+  @include for-tablet-portait-only {
+    max-width: 600px;
+  }
+
+  @include for-phone-only {
+    padding: 49px 0 0 0;
+    margin: 0 0 32px;
+  }
+}
+
+.experienceList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1080px;
+  justify-content: space-between;
+  margin: 0 auto 40px auto;
+
+  @include for-tablet-landscape-only {
+    max-width: 92vw;
+  }
+
+  @include for-tablet-portait-only {
+    max-width: 500px;
+    justify-content: center;
+  }
+
+  @include for-phone-only {
+    max-width: 90vw;
+    justify-content: center;
+    padding: 0 4px;
+    margin: 0 auto 32px auto;
+    flex-direction: column;
+  }
+}
+
+.resume {
+  margin: 0 auto;
+  // display: block;
+}

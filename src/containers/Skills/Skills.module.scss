@@ -1,0 +1,146 @@
+@import "../../styles/mixins";
+
+.skillsSection {
+  // padding: 97px 0 0 0;
+  display: flex;
+  position: relative;
+
+  @include for-phone-only {
+    flex-direction: column-reverse;
+  }
+}
+
+.sectionLeft {
+  width: 50%;
+  box-sizing: border-box;
+  background-clip: content-box;
+  padding: 0 12.5vw 0 0;
+  background: rgb(183, 77, 44);
+  background: linear-gradient(
+      145deg,
+      rgba(183, 77, 44, 1) 0%,
+      rgba(154, 49, 113, 1) 100%
+    )
+    content-box;
+  height: 88.6vh;
+
+  @include for-phone-only {
+    width: 100%;
+    height: auto;
+    background: none;
+    padding: 0 24px;
+  }
+}
+
+.sectionRight {
+  width: 50%;
+
+  @include for-phone-only {
+    width: 100%;
+    // padding: 7vh 9.375vw 0 9.375vw;
+    padding: 81px 24px 0;
+    box-sizing: border-box;
+    // text-align: center;
+  }
+}
+
+.sectionTitle {
+  top: -96px;
+
+  @include for-tablet-landscape-only {
+    top: -10.6vh;
+  }
+
+  @include for-tablet-portait-only {
+    top: -10.6vh;
+  }
+
+  @include for-phone-only {
+    top: 32px;
+  }
+}
+
+.linkedInBlock {
+  position: absolute;
+  max-width: 43.75vw;
+  background: rgb(108, 23, 57);
+  background: linear-gradient(
+    90deg,
+    rgba(108, 23, 57, 1) 0%,
+    rgba(147, 51, 52, 1) 100%
+  );
+  z-index: 2;
+  height: 67.4vh;
+  top: 10.6vh;
+  padding: 7.5vh 4.071428571428571vw 0 12.5vw;
+  box-sizing: border-box;
+
+  @include for-phone-only {
+    height: auto;
+    position: static;
+    max-width: none;
+    padding: 28px 28px 44px 32px;
+  }
+}
+
+.linkedInHeading {
+  color: #ffffff;
+  // font-size: 38px;
+  font-weight: normal;
+  margin: 0 0 5.7vh 0;
+
+  $min_width: 320px;
+  $max_width: 1440px;
+  $min_font: 22px;
+  $max_font: 38px;
+
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
+  @include for-phone-only {
+    margin-bottom: 32px;
+  }
+}
+
+.linkedInButton {
+  border-color: #fb754c;
+  color: #fb754c;
+
+  &:hover {
+    background-color: transparent;
+
+    color: #b74d2d;
+    border-color: #b74d2d;
+  }
+
+  @include for-phone-only {
+    height: 56px;
+    margin: 0 auto;
+    line-height: 18px;
+    font-size: 18px;
+  }
+}
+
+.skillsHeading {
+  max-width: 537px;
+  margin: 0 0 7.3vh 0;
+  span {
+    color: #b44b33;
+  }
+
+  @include for-phone-only {
+    line-height: 24px;
+    text-align: center;
+    margin: 0 0 18px 0;
+    max-width: none;
+  }
+}
+
+.skillsParagraph {
+  max-width: 525px;
+
+  @include for-phone-only {
+    line-height: 32px;
+    margin: 0 0 32px 0;
+    max-width: none;
+  }
+}

@@ -1,0 +1,54 @@
+// @import "../../styles/fonts";
+@import "../../styles/mixins";
+
+.base {
+  font-family: "BentonSans";
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.footer {
+  composes: base;
+
+  color: #000000;
+
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 500;
+
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+  @include for-tablet-landscape-only {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @include for-tablet-portait-only {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @include for-phone-only {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  &:hover {
+    color: #1323C4;
+  }
+  
+}
+
+.nav {
+  composes: base;
+  font-size: 16px;
+  line-height: 18px;
+  color: inherit;
+  // color: #000000;
+  cursor: pointer;
+
+  @include for-tablet-portrait-up {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
