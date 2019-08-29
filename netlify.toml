@@ -3,3 +3,9 @@
   to = "/public"
   status = 200
   force = false
+
+[[redirects]]
+  from = "/_book"
+  to = "/gitbook"
+  status = 200
+  force = false
