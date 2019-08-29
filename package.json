@@ -1,49 +1,22 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
-  "license": "MIT",
+  "name": "gitbook_test",
+  "version": "1.0.0",
+  "description": "Hey this is test a new one!",
+  "main": "index.js",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "dependencies": {
-    "gatsby": "^2.3.5",
-    "gatsby-plugin-netlify": "^2.0.17",
-    "gatsby-plugin-netlify-cms": "^3.0.17",
-    "gatsby-plugin-react-helmet": "^3.1.2",
-    "gatsby-plugin-sass": "^2.0.11",
-    "gatsby-plugin-sharp": "^2.1.1",
-    "gatsby-remark-copy-linked-files": "^2.0.12",
-    "gatsby-source-filesystem": "^2.0.32",
-    "gatsby-transformer-remark": "^2.3.12",
-    "gatsby-transformer-sharp": "^2.1.19",
-    "interweave": "^11.1.0",
-    "netlify-cms": "^2.9.0",
-    "node-sass": "^4.11.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1",
-    "react-modal": "^3.8.1",
-    "react-reveal": "^1.2.2",
-    "react-transition-group": "^4.2.1",
-    "smooth-scroll": "^16.1.0"
-  },
-  "devDependencies": {
-    "gitbook-cli": "^2.3.2",
-    "prettier": "^1.16.4"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "git+https://github.com/theparkourkick/gitbook_test.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/theparkourkick/gitbook_test/issues"
+  },
+  "homepage": "https://github.com/theparkourkick/gitbook_test#readme",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
   }
 }
