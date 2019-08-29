@@ -1,7 +1,5 @@
-# [[redirects]]
-#   from = "/_book/"
-#   to = "https://brave-carson-3da2a5.netlify.com/_book/"
-#   status = 200
-#   [redirects.headers]
-#     X-From = "Netlify"
-#     X-Api-Key = "some-api-key-string"
+[[redirects]]
+  from = "/"
+  to = "/public"
+  status = 200
+  force = false
