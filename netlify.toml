@@ -3,3 +3,9 @@
   to = "/public"
   status = 200
   force = false
+
+[[redirects]]
+  from = "/admin"
+  to = "/public/admin"
+  status = 200
+  force = false
