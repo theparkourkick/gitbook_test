@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "/_book"
-  to = "/gitbook"
+  from = "/gitbook"
+  to = "/_book"
   status = 200
   force = false
 
